@@ -11,6 +11,6 @@ type Result = {
 
 type SearchResult = {
   query?: {
-    page?: Result[];
+    pages?: Result[];
   };
 };
