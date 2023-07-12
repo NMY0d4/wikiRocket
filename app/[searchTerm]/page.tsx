@@ -31,7 +31,7 @@ export default async function SearchResults({ params: { searchTerm } }: Props) {
   const results: Result[] | undefined = data?.query?.pages;
 
   const content = (
-    <main className='bg-slate-200 mx-auto max-w-lg py-1 min-h-screen'>
+    <main className='bg-slate-200 mt-[1rem] mx-auto max-w-lg py-1 min-h-screen'>
       {results ? (
         Object.values(results).map((result) => {
           return <Item key={result.pageid} result={result} />;
